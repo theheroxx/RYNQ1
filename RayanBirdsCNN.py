@@ -20,16 +20,16 @@ import zipfile
 #######################################################################################################
 
  # dl
-def download_dataset(dataset_id="RayanAi/Noisy_birds", local_dataset_dir="/content/drive/MyDrive/Noisy_birds"):
-    os.makedirs(local_dataset_dir, exist_ok=True)
-    with open(os.devnull, 'w') as fnull:
-        original_stdout = sys.stdout
-        try:
-            sys.stdout = fnull
-            snapshot_download(repo_id=dataset_id, local_dir=local_dataset_dir, repo_type="dataset")
-        finally:
-            sys.stdout = original_stdout
-    print("Dataset downloaded completely.")
+#def download_dataset(dataset_id="RayanAi/Noisy_birds", local_dataset_dir="/content/drive/MyDrive/Noisy_birds"):
+#    os.makedirs(local_dataset_dir, exist_ok=True)
+#    with open(os.devnull, 'w') as fnull:
+#        original_stdout = sys.stdout
+#        try:
+#            sys.stdout = fnull
+#            snapshot_download(repo_id=dataset_id, local_dir=local_dataset_dir, repo_type="dataset")
+#        finally:
+#            sys.stdout = original_stdout
+#    print("Dataset downloaded completely.")
 
 #######################################################################################################
 
